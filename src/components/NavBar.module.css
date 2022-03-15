@@ -1,0 +1,11 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #D9C4B8;
+}
+.navbar .navbar__wrapper {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
