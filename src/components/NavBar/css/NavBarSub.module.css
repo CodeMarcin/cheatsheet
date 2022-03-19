@@ -1,0 +1,11 @@
+.navbar__sub {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: #0D0D0D;
+  border-radius: 5px;
+}

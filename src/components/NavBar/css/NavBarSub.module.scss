@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.navbar__sub {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: $colorOne;
+  // border: 2px solid $colorFour;
+  border-radius: 5px;
+}

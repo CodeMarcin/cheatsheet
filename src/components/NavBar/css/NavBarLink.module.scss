@@ -1,0 +1,15 @@
+@import '../../../styles/variables.scss';
+
+.navbar__link {
+  color: $colorThree;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+
+  &.navbar__link--main {
+  
+  }   
+}
