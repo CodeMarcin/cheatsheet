@@ -1,1 +1,1 @@
-export const MainMenuArray = ['React', 'Type Script'];
+export const MainMenuArray = ['React', "Type Script"];

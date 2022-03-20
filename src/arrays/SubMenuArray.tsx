@@ -8,6 +8,22 @@ export const SubMenuArray = [
     {
       mainTitle: "Funkcje",
       links: ["Coś z funkcjami 1", "Coś z funkcjami 2"]
+    },
+    {
+      mainTitle: "Funkcje",
+      links: ["Coś z funkcjami 1", "Coś z funkcjami 2"]
+    },
+    {
+      mainTitle: "Funkcje",
+      links: ["Coś z funkcjami 1", "Coś z funkcjami 2"]
+    },
+    {
+      mainTitle: "Funkcje",
+      links: ["Coś z funkcjami 1", "Coś z funkcjami 2"]
+    },
+    {
+      mainTitle: "Funkcje",
+      links: ["Coś z funkcjami 1", "Coś z funkcjami 2"]
     }
   ],
 

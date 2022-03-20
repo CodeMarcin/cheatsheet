@@ -3,6 +3,8 @@ import { MenuReduxType } from '../../types/MenuRedux.types';
 
 import { SubMenuArray } from '../../arrays/SubMenuArray';
 
+import { NavBarLink } from './NavBarLink';
+
 import styles from './css/NavBarSub.module.css';
 
 export const NavBarSub = () => {
@@ -16,18 +18,20 @@ export const NavBarSub = () => {
     <div className={styles['navbar__sub']}>
       {subMenu?.submenu.map((item) => {
         return (
-          <div>
-            <ul>
-              <li>
-                {item.mainTitle}
-                <ul>
-                  {item.links.map(item => {
-                    return <li>{item}</li>;
-                  })}
-                </ul>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li className={styles['navbar__sub-mainTitle']}>
+              {item.mainTitle}
+              <ul>
+                {item.links.map((link) => {
+                  return (
+                    <li className={styles["navbar__sub-link"]}>
+                      <NavBarLink key={link} menuItem={link} type="sub" />
+                    </li>
+                  );
+                })}
+              </ul>
+            </li>
+          </ul>
         );
       })}
     </div>

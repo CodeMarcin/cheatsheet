@@ -11,5 +11,14 @@
 
   &.navbar__link--main {
   
-  }   
+  } 
+
+  &.navbar__link--sub {
+  
+    color: $colorOne;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -1,11 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fredoka:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 .navbar__sub {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   position: absolute;
   top: 100%;
   width: 100%;
-  padding: 1rem 1.5rem;
-  color: #fff;
-  background-color: #0D0D0D;
-  border-radius: 5px;
+  background-color: #fff;
+  color: #0D0D0D;
+  border-bottom: 2px solid #D9C4B8;
+}
+.navbar__sub .navbar__sub-mainTitle {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.navbar__sub .navbar__sub-link {
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
 }

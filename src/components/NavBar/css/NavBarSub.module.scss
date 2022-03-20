@@ -3,12 +3,24 @@
 .navbar__sub {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   position: absolute;
   top: 100%;
   width: 100%;
-  padding: 1rem 1.5rem;
-  color: #fff;
-  background-color: $colorOne;
-  // border: 2px solid $colorFour;
-  border-radius: 5px;
+  background-color: #fff;
+  color: $colorOne;
+  border-bottom: 2px solid $colorFour;
+
+  & .navbar__sub-mainTitle {
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  & .navbar__sub-link {
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+
+  }
 }

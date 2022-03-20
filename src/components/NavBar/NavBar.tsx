@@ -23,6 +23,7 @@ export const NavBar = () => {
       >
         <NavBarMain />
         {menuReduxState.active && menuReduxState.submenu  && <NavBarSub />}
+ 
       </div>
     </div>
   );
