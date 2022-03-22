@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import { MenuReduxType } from '../../types/MenuRedux.types';
 
 import { SubMenuArray } from '../../arrays/SubMenuArray';
@@ -14,19 +15,28 @@ export const NavBarSub = () => {
     (item) => item.parent === menuReduxState.submenu
   );
 
+  const createURL = (string: string) => {
+    return string.split(' ').join('_').toLowerCase();
+  }
+
   return (
     <div className={styles['navbar__sub']}>
       {subMenu?.submenu.map((item) => {
+        const { mainTitle, links } = item;
         return (
           <ul>
             <li className={styles['navbar__sub-mainTitle']}>
-              {item.mainTitle}
+              {mainTitle}
               <ul>
-                {item.links.map((link) => {
+                {links.map((link) => {
                   return (
-                    <li className={styles["navbar__sub-link"]}>
-                      <NavBarLink key={link} menuItem={link} type="sub" />
-                    </li>
+                    <Link
+                      to={`/${subMenu.parent}/${mainTitle}/${createURL(link)}`}
+                    >
+                      <li className={styles['navbar__sub-link']}>
+                        <NavBarLink key={link} menuItem={link} type="sub" />
+                      </li>
+                    </Link>
                   );
                 })}
               </ul>
