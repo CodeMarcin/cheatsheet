@@ -27,17 +27,20 @@ export const Page = () => {
   );
 
   let contextTitle = '';
+  let contextOveralDesc = '';
   let contextText = [];
 
 
   for (let i = 0; i < filteredArray.context.length; i++) {
     if (createURL(filteredArray.context[i].contextTitle) === link) {
-      contextTitle = filteredArray.context[i].contextTitle
+      contextTitle = filteredArray.context[i].contextTitle;
+      contextOveralDesc = filteredArray.context[i].contextOveralDesc;
       contextText = filteredArray.context[i].contextText;
+
     }
 
     // return {contextTitle, contextText}
   }
 
-  return <PageDisplay contextTitle={contextTitle} contextText={contextText}/>;
+  return <PageDisplay contextTitle={contextTitle} contextOveralDesc={contextOveralDesc} contextText={contextText}/>;
 };

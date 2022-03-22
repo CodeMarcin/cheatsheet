@@ -12,6 +12,9 @@
   border-bottom: 2px solid #264773;
   padding-bottom: 1rem;
 }
+.page__wrapper .page__overlayDesc {
+  font-weight: 600;
+}
 .page__wrapper .page__fileName {
   font-weight: 500;
   font-family: "Fredoka", sans-serif;

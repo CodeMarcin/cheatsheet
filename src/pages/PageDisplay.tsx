@@ -5,14 +5,20 @@ import styles from './PageDisplay.module.css';
 
 interface PageDisplayType {
   contextTitle: string;
+  contextOveralDesc: string;
   contextText: any;
 }
 
-export const PageDisplay = ({ contextTitle, contextText }: PageDisplayType) => {
+export const PageDisplay = ({
+  contextTitle,
+  contextOveralDesc,
+  contextText,
+}: PageDisplayType) => {
   const codeString = '(num) => num + 1';
   return (
     <div className={styles['page__wrapper']}>
       <h1 className={styles['page__title']}>{contextTitle}</h1>
+      <p className={styles["page__overlayDesc"]}>{contextOveralDesc}</p>
       {contextText.map((item: any) => {
         return (
           <>
