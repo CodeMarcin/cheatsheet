@@ -1,62 +1,18 @@
 export const ReactPageArray = [
   {
     sectionTitle: 'Array',
-    section: [
+    context: [
       {
-        title: 'Coś z tabelami',
-        context: [
-          {
-            contextTitle: 'Some context title #1',
-            contextCode: '<p>{$sadasd}</p>',
-            contextText: 'Some tekst to some context #1',
-          },
-          {
-            contextTitle: 'Some context title #23',
-            contextCode: '<p>{$sadasd}</p>',
-            contextText: 'Some tekst to some context #23',
-          },
-        ],
-      },
-      {
-        title: 'Coś drugiego z tabelami',
-        context: [
-          {
-            contextTitle: 'Some context title #22222',
-            contextCode: '<p>{$sad123123123asd}</p>',
-            contextText: 'Some tekst to some context #3123123',
-          },
+        contextTitle: 'Coś z tabelami',
+        contextText: [
+          { fileName: 'Somefile.tsx 1', desc: 'Some desc 1', code: 'Some code 1' },
+          { fileName: 'Somefile.tsx 2', desc: 'Some desc 2', code: 'Some code 2' },
         ],
       },
     ],
   },
   {
     sectionTitle: 'Funkcje',
-    section: [
-      {
-        title: 'Coś z funkcja',
-        context: [
-          {
-            contextTitle: 'Some context title #1',
-            contextCode: '<p>{$sadasd}</p>',
-            contextText: 'Some tekst to some context #1',
-          },
-          {
-            contextTitle: 'Some context title #23',
-            contextCode: '<p>{$sadasd}</p>',
-            contextText: 'Some tekst to some context #23',
-          },
-        ],
-      },
-      {
-        title: 'Coś drugiego z tabelami',
-        context: [
-          {
-            contextTitle: 'Some context title #22222',
-            contextCode: '<p>{$sad123123123asd}</p>',
-            contextText: 'Some tekst to some context #3123123',
-          },
-        ],
-      },
-    ],
+    context: [{ contextTitle: 'Coś z funkcjami' }],
   },
 ];

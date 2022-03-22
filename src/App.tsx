@@ -12,11 +12,11 @@ import './styles/clear.css'
 function App() {
   const menuReduxState = useSelector((state: MenuReduxType) => state.menu);
 
-  useEffect(() => {
-    console.log(menuReduxState, 'use EFFECT');
+  // useEffect(() => {
+  //   console.log(menuReduxState, 'use EFFECT');
   
   
-  }, [menuReduxState])
+  // }, [menuReduxState])
   
   return (
     <div className="App">

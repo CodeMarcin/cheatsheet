@@ -1,6 +1,28 @@
+@import '../styles/variables.scss';
+
 .page__wrapper { 
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 8rem auto;
   max-width: 1120px;
+  font-family: $fontOne;
+
+
+  .page__title {
+    color: $colorOne;
+    border-bottom: 2px solid $colorTwo;
+    padding-bottom: 1rem;
+  }
+
+  .page__fileName {
+    font-weight: 500;
+    font-family: $fontTwo;
+    font-size: 1.4rem;
+  }
+
+  .page__desc {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
 }
